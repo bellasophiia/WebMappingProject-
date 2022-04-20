@@ -1,4 +1,6 @@
-
+.map-container {
+    height: 500px;
+}
 .active {
     color: turquoise
 }
