@@ -1,1 +1,20 @@
 
+.active {
+    color: turquoise
+}
+.block {
+padding-left: 5% ; 
+padding-right: 5%;
+}
+.block{
+    height: 700px; 
+}
+h1{
+    text-align: center; color: blue; margin-top: auto;margin-bottom: auto;
+}
+footer{
+    margin-top: auto;padding: 0%; background-color: beige;color: black
+}
+
+
+}
