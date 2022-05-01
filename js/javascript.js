@@ -7,10 +7,12 @@ attribution: 'OpenStreetMap contributors',
  })
 osm.addTo(map)
 
+
 // add popups to polygons
 function popUPinfo(feature, layer) {
  layer.bindPopup(feature.properties.NIMI)
 }
+
 
 
 // add geoJSON polygons
@@ -23,6 +25,7 @@ async function addDistrictsGeoJson(url) {
  })
  polygons.addTo(map)
 }
+
 addDistrictsGeoJson('geojson/tartu_city_districts_edu.geojson')
 
 
