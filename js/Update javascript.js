@@ -59,6 +59,31 @@ function polygonStyle(feature) {
 async function addCelltowersGeoJson(url) {
  const response = await fetch(url)
  const data = await response.json()
+ L.choropleth(data, {
+valueProperty
+:
+'OBJECTID'
+scale
+'#ffffff'
+'#ff9900'
+steps
+mode: '
+style
+color
+weight
+fillOpacity
+},
+onEachFeature
+function
+(feature, layer) {
+layer.bindPopup(
+'Value: '
+feature.properties.OBJECTID)
+},
+'#fff'
+  }).addTo(map)
+}
+:{ 
  const markers = L.geoJson(data) 
  const clusters = L.markerClusterGroup() 
  clusters.addLayer(markers) 
